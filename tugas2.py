@@ -15,7 +15,7 @@ def api_user():
     model = load_model('keras_Model.h5', compile=False)
 
     # Load the labels
-    class_names = ["Agung", "Biel"]
+    class_names = ["Agung", "Biel", "russel"]
 
 
   # Create the array of the right shape to feed into the keras model
