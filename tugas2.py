@@ -15,7 +15,7 @@ def api_user():
     model = load_model('keras_Model.h5', compile=False)
 
     # Load the labels
-    class_names = ["Agung", "Biel", "russel"]
+    class_names = ["Agung", "russel", "nofrest"]
 
 
   # Create the array of the right shape to feed into the keras model
@@ -25,8 +25,8 @@ def api_user():
 
     # Replace this with the path to your image
     image = Image.open('1test.h5.jpg').convert('RGB')
-    #image = Image.open('agung.png').convert('RGB')
-    #image = Image.open('nofrets.png').convert('RGB')
+    image = Image.open('russel.jpg').convert('RGB')
+    image = Image.open('nofrets.png').convert('RGB')
 
     #resize the image to a 224x224 with the same strategy as in TM2:
     #resizing the image to be at least 224x224 and then cropping from the center
